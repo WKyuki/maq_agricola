@@ -1,0 +1,71 @@
+{
+  "version": 1,
+  "author": "Yuki Watanabe Kuramoto",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "board-esp32-devkit-c-v4", "id": "esp", "top": 115.2, "left": -177.56, "attrs": {} },
+    { "type": "wokwi-dht22", "id": "dht1", "top": -86.1, "left": -178.2, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn2",
+      "top": -9.7,
+      "left": 32.3,
+      "rotate": 180,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-photoresistor-sensor",
+      "id": "ldr1",
+      "top": 281.6,
+      "left": -421.6,
+      "attrs": {}
+    },
+    { "type": "wokwi-relay-module", "id": "relay1", "top": 192.2, "left": 134.4, "attrs": {} },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 207.6,
+      "left": -313,
+      "rotate": 270,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 63.8,
+      "left": 28.8,
+      "attrs": { "color": "green", "xray": "1" }
+    },
+    {
+      "type": "wokwi-lcd2004",
+      "id": "lcd2",
+      "top": 390.4,
+      "left": 72.8,
+      "attrs": { "pins": "i2c" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX", "$serialMonitor:TX", "", [] ],
+    [ "dht1:VCC", "esp:3V3", "red", [ "h-9.6", "v115.2" ] ],
+    [ "dht1:GND", "esp:GND.2", "black", [ "h57.6", "v115.2" ] ],
+    [ "dht1:SDA", "esp:15", "green", [ "v57.6", "h115.3", "v201.6" ] ],
+    [ "ldr1:VCC", "esp:3V3", "red", [ "h28.8", "v-153.6" ] ],
+    [ "ldr1:GND", "esp:GND.2", "black", [ "h28.8", "v76.4", "h268.8", "v-240" ] ],
+    [ "ldr1:AO", "esp:34", "green", [ "h48", "v-144.7" ] ],
+    [ "relay1:VCC", "esp:5V", "red", [ "h-57.6", "v153.6", "h-249.75" ] ],
+    [ "relay1:GND", "esp:GND.2", "black", [ "h-28.8", "v-77.2" ] ],
+    [ "relay1:IN", "esp:5", "violet", [ "h-96", "v-86.6" ] ],
+    [ "led1:C", "esp:GND.2", "black", [ "v0" ] ],
+    [ "led1:A", "esp:26", "cyan", [ "h0" ] ],
+    [ "btn2:1.r", "esp:4", "blue", [ "h-41.9", "v233.9" ] ],
+    [ "btn2:2.r", "esp:GND.2", "black", [ "h0" ] ],
+    [ "btn1:1.l", "esp:2", "gold", [ "h-19.2", "v201.6" ] ],
+    [ "btn1:2.l", "esp:GND.2", "black", [ "h0" ] ],
+    [ "lcd2:SDA", "esp:21", "cyan", [ "h-57.6", "v-249.4" ] ],
+    [ "lcd2:SCL", "esp:22", "purple", [ "h-96", "v-287.7" ] ],
+    [ "lcd2:VCC", "esp:5V", "red", [ "h0" ] ],
+    [ "lcd2:GND", "esp:GND.2", "black", [ "h-28.8", "v-278.4" ] ]
+  ],
+  "dependencies": {}
+}

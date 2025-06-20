@@ -50,7 +50,7 @@ Dentre os arquivos e pastas presentes na raiz do projeto, definem-se:
 - data/: Diretório para armazenar arquivos gerados pela aplicação, como o banco de dados e o modelo treinado. Esta pasta é ignorada pelo Git (via .gitignore).
 - arduino/: Contém o código (.ino) a ser embarcado no hardware de controle, como um Arduino ou ESP32.
 
-## Como Executar o Código
+## 🔧 Como Executar o Código
 
 Para executar este projeto, você precisará ter o **Python 3.10+** instalado. Siga os passos abaixo.
 

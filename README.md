@@ -1,5 +1,5 @@
 # FIAP - Faculdade de Informática e Administração Paulista
-# Máquina Agrícola
+# Máquina Agrícola - Fase 4
 
 ## 👨‍🎓 Integrantes: 
 - Yuki Watanabe Kuramoto
@@ -103,4 +103,6 @@ streamlit run dashboard.py
 
 O comando acima iniciará um servidor web local e abrirá o dashboard no seu navegador padrão.
 
-
+## 🗃 Histórico de lançamentos  
+  
+Fase 3: https://github.com/WKyuki/Cap1_MaqAgricola

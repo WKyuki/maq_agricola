@@ -35,6 +35,8 @@ Apresenta gráficos de séries temporais para visualizar a variação da umidade
 Contém um código de exemplo para microcontroladores (Arduino/ESP32) que simula a lógica de leitura de sensores e acionamento de um relé de irrigação.
 A CLI possui uma funcionalidade para gerar dados históricos simulados, permitindo o teste e treinamento do modelo de IA mesmo sem dados reais.
 
+**Vídeo demonstração**  
+([Vídeo YouTube](https://youtu.be/F6z16Xy9vMI))
 
 ## 📁 Estrutura de pastas
 
